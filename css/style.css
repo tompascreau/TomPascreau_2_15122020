@@ -3,6 +3,8 @@ body
     margin: 0%;
 }
 
+/* Header */
+
 header
 {
     display: flex;
@@ -22,7 +24,7 @@ header
     background-color: brown;
 }
 
-ul
+header ul
 {
     display: flex;
     flex: 1;
@@ -31,10 +33,14 @@ ul
     list-style: none;
 }
 
-li
+header li
 {
     padding: 0em 1em;
 }
+
+/* fin du Header */
+
+/* section recherche */
 
 #recherche
 {
@@ -61,3 +67,51 @@ li
     flex-direction: row;
     margin: 1em;
 }
+
+/* Fin de section recherche */
+
+/* section Hébergements */
+
+#hébergements
+{
+    margin: 1em;
+    display: flex;
+}
+
+/* Fin de section Hébergements */
+
+/* Partie "Hébergements à Marseille" */
+
+#hebergements_in_city
+{
+    margin: 1em;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+#hotels
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+/* Fin de partie "Hébergements à Marseille" */
+
+/* Partie "Les plus populaires" */
+
+#populaires
+{
+    margin: 1em;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    background-color: chocolate;
+}
+
+/* Fin de partie "Les plus populaires" */
