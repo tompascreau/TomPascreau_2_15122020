@@ -78,6 +78,11 @@ header li
     display: flex;
 }
 
+#hébergements h4
+{
+    margin: 0%;
+}
+
 /* Fin de section Hébergements */
 
 /* Partie "Hébergements à Marseille" */
@@ -101,6 +106,28 @@ header li
     align-content: space-around;
 }
 
+.logement
+{
+    width: 33%;
+}
+
+.image_hotels
+{
+    height: 60%;
+    overflow: hidden;
+}
+
+.content_hotels
+{
+    height: 40%;
+}
+
+.logement img
+{
+    max-width: 100%;
+    max-height: auto;
+}
+
 /* Fin de partie "Hébergements à Marseille" */
 
 /* Partie "Les plus populaires" */
@@ -112,6 +139,38 @@ header li
     display: flex;
     flex-direction: column;
     background-color: chocolate;
+}
+
+#title_populaires
+{
+    display: flex;
+}
+
+#title_populaires h3
+{
+    margin: 0%;
+}
+
+#logements_populaires
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.logement_2
+{
+    display: flex;
+}
+
+.images_populaires
+{
+    width: 38.5%;
+}
+
+.images_populaires img
+{
+    max-width: 100%;
+    max-height: auto;
 }
 
 /* Fin de partie "Les plus populaires" */
