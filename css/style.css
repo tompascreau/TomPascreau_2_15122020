@@ -90,6 +90,7 @@ header li
 #hebergements_in_city
 {
     margin: 1em;
+    padding: 1em;
     width: 66%;
     display: flex;
     flex-direction: column;
@@ -108,18 +109,16 @@ header li
 
 .logement
 {
-    width: 33%;
+    width: 30%;
+    height: auto;
+    margin: 5% 1%;
 }
 
 .image_hotels
 {
     height: 60%;
+    width: 100%;
     overflow: hidden;
-}
-
-.content_hotels
-{
-    height: 40%;
 }
 
 .logement img
@@ -153,8 +152,10 @@ header li
 
 #logements_populaires
 {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .logement_2
