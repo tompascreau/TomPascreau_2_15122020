@@ -209,3 +209,43 @@ header li
 {
     border: solid black 2px;
 }
+
+/* Fin de partie "Activités à Marseille" */
+
+/* Partie Footer */
+
+footer li
+{
+    list-style: none;
+}
+
+footer ul
+{
+    padding: 0%;
+}
+
+footer
+{
+    padding: 1em;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#a_propos_footer
+{
+    margin: 1em;
+    flex: 1;
+}
+
+#hébergements_footer
+{
+    margin: 1em;
+    flex: 1;
+}
+
+#assistance_footer
+{
+    margin: 1em;
+    flex: 1;
+}
