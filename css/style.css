@@ -112,6 +112,7 @@ header li
     width: 30%;
     height: auto;
     margin: 5% 1%;
+    border: solid black 2px;
 }
 
 .image_hotels
@@ -161,6 +162,8 @@ header li
 .logement_2
 {
     display: flex;
+    flex-direction: row;
+    border: solid black 2px;
 }
 
 .images_populaires
@@ -175,3 +178,34 @@ header li
 }
 
 /* Fin de partie "Les plus populaires" */
+
+/* Partie "Activités à Marseille*/
+
+#activités_in_city
+{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.style_1
+{
+    background-color: cadetblue;
+    margin: 1em;
+    padding: 1em;
+    border: solid black 2px;
+}
+
+.style_2
+{
+    background-color: coral;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.activité_2
+{
+    border: solid black 2px;
+}
