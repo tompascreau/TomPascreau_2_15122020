@@ -8,6 +8,11 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
+a
+{
+    text-decoration: none;
+}
+
 /* Header */
 
 header
@@ -19,46 +24,121 @@ header
 #logo
 {
     display: flex;
-    flex: 1;
+    flex: 2;
     margin: 2em 0;
 }
 
 #menu_nav
 {
     display: flex;
-    padding: 1em;
+    flex: 1;
 }
 
-header ul
+nav
+{
+    width: 100%;
+}
+
+#list_nav
 {
     display: flex;
-    flex: 1;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
-}
-
-header a
-{
-    text-decoration: none;
 }
 
 header li
 {
-    padding: 0em 1em;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    font-size: 1em;
+}
+
+header a
+{
+    color: black;
+    display: flex;
+    padding: 0 1em;
+    height: 100%;
+    align-items: center;
+}
+
+header a:hover
+{
+    color: #0065FC;
+}
+
+/*header li:hover:nth-child(-n+2)
+{
+    border-top: #0065FC 2px solid;
+}*/
+
+header a:focus
+{
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+
+#inscription
+{
+    color:  #0065FC;
 }
 
 /* fin du Header */
 
 /* section recherche */
 
+h2
+{
+    font-weight: bolder;
+    margin: 0;
+}
+
 #recherche
 {
-    background-color: burlywood;
     display: flex;
     flex-direction: column;
 }
 
+#bouton_recherche
+{
+    display: flex;
+    width: min-content;
+    border-radius: 1em;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#bouton_recherche i
+{
+    padding: 15px;
+    background-color: #F2F2F2;
+    font-size: 1em;
+}
+
+#bouton_recherche input
+{
+    border: solid #F2F2F2 1px;
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+#bouton_recherche button
+{
+    background-color:  #0065fc;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    padding: 15px;
+    border: none;
+}
+/* Sous partie filtres */
 #filtres
 {
     display: flex;
@@ -77,6 +157,8 @@ header li
     flex-direction: row;
     margin: 1em;
 }
+
+/* Fin de sous partie filtres */
 
 /* Fin de section recherche */
 
