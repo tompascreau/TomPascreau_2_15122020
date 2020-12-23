@@ -74,12 +74,7 @@ header a:hover
     color: #0065FC;
 }
 
-/*header li:hover:nth-child(-n+2)
-{
-    border-top: #0065FC 2px solid;
-}*/
-
-header a:focus
+.classique:focus
 {
     border-top: #0065FC 2px solid;
     color: #0065FC;
@@ -145,17 +140,54 @@ h2
     flex-direction: row;
 }
 
-#filtres h3
+#filtres h4
 {
     margin: 0%;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
 .selecteur
 {
+    background-color: white;
     display: flex;
     flex-direction: row;
+    padding: 0;
     margin: 1em;
+    border: 3px solid #F2F2F2;
+    border-radius: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecteur:hover
+{
+    border: #0065fc solid 2px;
+    opacity: 50%;
+}
+
+.selecteur:focus
+{
+    background-color: #0065fc;
+    border: unset;
+}
+
+.selecteur h4
+{
+    padding: 1em;
+}
+
+.logo_selecteur
+{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    padding: 1em;
+    background-color: #DEEBFF;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Fin de sous partie filtres */
