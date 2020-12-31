@@ -78,12 +78,7 @@ header a
 header a:hover
 {
     color: #0065FC;
-}
-
-.classique:focus
-{
     border-top: #0065FC 2px solid;
-    color: #0065FC;
 }
 
 #inscription
@@ -225,7 +220,7 @@ h2
 #hebergements_in_city
 {
     margin: 1em;
-    padding: 1em;
+    padding: 40px;
     width: 66%;
     display: flex;
     flex-direction: column;
@@ -238,7 +233,7 @@ h2
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     align-content: space-around;
 }
@@ -247,22 +242,23 @@ h2
 {
     width: 30%;
     height: auto;
-    margin: 5% 1%;
-    border: solid white 3px;
+    padding: 5px;
+    margin-bottom: 35px;
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: black 0px 0px 4px 1px;
+    box-shadow: 0px 0px 15px grey;
 }
 
 .image_hotels
 {
-    height: 60%;
     width: 100%;
 }
 
 .logement img
 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     max-width: 100%;
     max-height: auto;
 }
@@ -274,6 +270,7 @@ h2
 #populaires
 {
     margin: 1em;
+    padding: 40px;
     width: 34%;
     display: flex;
     flex-direction: column;
@@ -284,11 +281,7 @@ h2
 #title_populaires
 {
     display: flex;
-}
-
-#title_populaires h3
-{
-    margin: 0%;
+    justify-content: space-between;
 }
 
 #logements_populaires
@@ -296,7 +289,6 @@ h2
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .logement_2
@@ -306,9 +298,14 @@ h2
     background-color: white;
     border: white solid 5px;
     border-radius: 15px;
-    margin: 1em;
     overflow: hidden;
-    box-shadow: black 0px 0px 4px 1px;
+    box-shadow: 0px 0px 15px grey;
+    margin-bottom: 35px;
+}
+
+.content_populaires
+{
+    padding-left: 10px;
 }
 
 .images_populaires
@@ -364,7 +361,9 @@ h2
 
 .image_style_1 img
 {
-    height: 600px;
+    position: relative;
+    left: -25%;
+    width: 200%;
 }
 
 .image_style_2
