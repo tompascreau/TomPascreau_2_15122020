@@ -348,16 +348,16 @@ h2
 
 .style_1
 {
-    background-color: #F2F2F2;
     margin: 0;
-    padding: 1em;
-    border: solid black 2px;
+    padding: 0;
     width: 25%;
+    box-shadow: 0px 0px 15px grey;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .style_2
 {
-    background-color: #F2F2F2;
     margin: 1em;
     padding: 1em;
     display: flex;
@@ -367,7 +367,9 @@ h2
 
 .activité_2
 {
-    border: solid black 2px;
+    box-shadow: 0px 0px 15px grey;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .image_style_1
