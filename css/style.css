@@ -253,14 +253,30 @@ h2
 .image_hotels
 {
     width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-.logement img
+.image_hotels img
 {
+    z-index: 2;
+    position: relative;
+    top: -25%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     max-width: 100%;
     max-height: auto;
+}
+
+.content_hotels
+{
+    z-index: 1;
+    margin: 10px;
+}
+
+.content_hotels h4
+{
+    margin: 0%;
 }
 
 /* Fin de partie "Hébergements à Marseille" */
