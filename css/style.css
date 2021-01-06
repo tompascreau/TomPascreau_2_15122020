@@ -14,7 +14,7 @@ a
 
 main
 {
-    padding: 0 2em;
+    padding: 0 50px;
 }
 
 
@@ -200,7 +200,7 @@ h2
 
 .logo_selecteur
 {
-    color: blue;
+    color: #0065fc;
 }
 
 /* Fin de sous partie filtres */
@@ -211,7 +211,6 @@ h2
 
 #hebergements
 {
-    margin: 1em;
     display: flex;
 }
 
@@ -226,13 +225,22 @@ h2
 
 #hebergements_in_city
 {
-    margin: 1em;
+    margin: 20px;
+    margin-left: unset;
     padding: 40px;
-    width: 66%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 1em;
+}
+
+#hebergements_in_city h3
+{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 #hotels
@@ -248,40 +256,82 @@ h2
 .logement
 {
     width: 30%;
-    height: auto;
-    padding: 5px;
+    height: 180px;
     margin-bottom: 35px;
     background-color: white;
-    border-radius: 15px;
+    border: white solid 5px;
+    border-bottom: white solid 0px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px grey;
+    box-shadow: 0px 0px 10px #d7d7d7;
 }
 
 .image_hotels
 {
     width: 100%;
-    height: auto;
+    height: 105px;
     overflow: hidden;
 }
 
 .image_hotels img
 {
+    position: relative;
+    top: -25px;
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+}
+
+.image_hotels #img_4
+{
+    top: -50px;
+}
+
+.image_hotels #img_6
+{
+    top: -115px;
 }
 
 .content_hotels
 {
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55px;
     margin: 10px;
+    font-size: 0.9em;
+}
+
+.content_hotels p
+{
+    margin: 0;
+}
+
+.logement a
+{
+    text-decoration: none;
+    color: black;
 }
 
 .content_hotels h4
 {
     margin: 0%;
+}
+
+.stars
+{
+    display: flex;
+    font-size: 0.8em;
+}
+
+.active-star
+{
+    color: #0065fc;
+}
+
+.inactive-star
+{
+    color: #F2F2F2;
 }
 
 /* Fin de partie "Hébergements à Marseille" */
@@ -290,9 +340,10 @@ h2
 
 #populaires
 {
-    margin: 1em;
+    margin: 20px;
+    margin-right: unset;
     padding: 40px;
-    width: 34%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -312,7 +363,7 @@ h2
     flex-direction: column;
 }
 
-.logement_2
+.logement_2 a
 {
     display: flex;
     flex-direction: row;
@@ -322,23 +373,53 @@ h2
     overflow: hidden;
     box-shadow: 0px 0px 15px grey;
     margin-bottom: 35px;
-}
-
-.content_populaires
-{
-    padding-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .images_populaires
 {
-    width: 38.5%;
+    width: 130px;
+    height: 140px;
+    overflow: hidden;
 }
 
 .images_populaires img
 {
-    max-width: 100%;
-    max-height: auto;
+    position: relative;
+    object-fit: cover;   
+    width: auto;
+    max-height: 110%;
+    top: -5px;
+    left: -50px;
 }
+
+
+.images_populaires #img_3
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.content_populaires h4
+{
+    margin: 0;
+}
+
+.content_populaires p
+{
+    margin: 0;
+}
+
+.content_populaires
+{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Fin de partie "Les plus populaires" */
 
