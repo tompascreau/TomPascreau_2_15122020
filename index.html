@@ -30,7 +30,9 @@
                 </div>
                 <div>
                     <div id="bouton_recherche">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <div id="logo_recherche">
+                            <i class="fas fa-map-marker-alt search_logo"></i>
+                        </div>
                         <input type="search">
                         <button>
                             <span>Rechercher</span>
@@ -42,30 +44,30 @@
                     <h4>Filtres</h4>
                     <a href="#" class="selecteur">
                         <div class="logo_container">
-                            <i class="fas fa-money-bill-wave" class="logo_selecteur"></i>
+                            <i class="fas fa-money-bill-wave logo_selecteur"></i>
                         </div>
                         <h4>économique</h4>
                     </a>
                     <a href="#" class="selecteur">
                         <div class="logo_container">
-                            <i class="fas fa-child" class="logo_selecteur"></i>
+                            <i class="fas fa-child logo_selecteur"></i>
                         </div>
                         <h4>Familial</h4>
                     </a>
                     <a href="#" class="selecteur">
                         <div class="logo_container">
-                            <i class="fas fa-heart" class="logo_selecteur"></i>
+                            <i class="fas fa-heart logo_selecteur"></i>
                         </div>
                         <h4>Romantique</h4>
                     </a>
                     <a href="#" class="selecteur">
                         <div class="logo_container">
-                            <i class="fas fa-dog" class="logo_selecteur"></i>
+                            <i class="fas fa-dog logo_selecteur"></i>
                         </div>
                         <h4>Animaux autorisés</h4>
                     </a>
                 </div>
-                <div>
+                <div id="informations">
                     <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
@@ -150,7 +152,7 @@
                         <div class="logement">
                             <a href="#">
                             <div class="image_hotels">
-                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre d'hotel">
+                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" id="img_5" alt="chambre d'hotel">
                             </div>
                             <div class="content_hotels">
                                 <h4>Auberge le Panier</h4>
@@ -184,7 +186,7 @@
                             </a>
                         </div>
                     </div>
-                    <div>
+                    <div id="link_down_hotels">
                         <h4><a href="afficher_plus.html">Afficher plus</a></h4>
                     </div>
                 </div>    
@@ -259,56 +261,68 @@
                 <div>
                     <h3>Activités à Marseille</h3>
                 </div>
-                <div id="activites_in_city">
-                    <!--<a  href="#">-->
-                        <div class="style_1">
+                <div id="activites_in_city">            
+                    <div class="style_1">
+                        <a  href="#">
                             <div class="image_style_1">
                                 <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="port de plaisance">
                             </div>
-                            <h4>Vieux Port</h4>
-                        </div>
-                    <!--</a>-->
-                    <div class="style_2">
-                        <a href="#">
-                            <div class="activité_2">
-                                <div class="image_style_2">
-                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort">
-                                </div>
-                                <h4>Fort de Pomègues</h4>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="activité_2">
-                                <div class="image_style_2">
-                                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="île">
-                                </div>
-                                <h4>Ile du Frioul</h4>
+                            <div class="lieu_activite">
+                                <h4>Vieux Port</h4>
                             </div>
                         </a>
                     </div>
-                    <!--<a href="#">-->
-                        <div class="style_1">
-                            <div class="image_style_1">
-                                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques">
-                            </div>
-                            <h4>Parc National des Calanques</h4>
-                        </div>
-                    <!--</a>-->
                     <div class="style_2">
                         <a href="#">
                             <div class="activité_2">
-                                <div class="image_style_2">
-                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="cathédrale">
+                                <div id="image_style_2_top_left">
+                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort">
                                 </div>
-                                <h4>Notre-Dame-de-la-Garde</h4>
+                                <div class="lieu_activite">
+                                    <h4>Fort de Pomègues</h4>
+                                </div>
                             </div>
                         </a>
                         <a href="#">
                             <div class="activité_2">
-                                <div class="image_style_2">
-                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="parc">
+                                <div id="image_style_2_bottom_left">
+                                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="île">
                                 </div>
-                                <h4>Parc Longchamp</h4>
+                                <div class="lieu_activite">
+                                    <h4>Ile du Frioul</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="style_1">
+                        <a  href="#">
+                            <div class="image_style_1">
+                                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques">
+                            </div>
+                            <div class="lieu_activite">
+                                <h4>Parc National des Calanques</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="style_2">
+                        <a href="#">
+                            <div class="activité_2">
+                                <div id="image_style_2_top_right">
+                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="cathédrale">
+                                </div>
+                                <div class="lieu_activite">
+                                    <h4>Notre-Dame-de-la-Garde</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="activité_2">
+                                <div id="image_style_2_bottom_right">
+                                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc">
+                                </div>
+                                <div class="lieu_activite">
+                                    <h4>Parc Longchamp</h4>
+                                </div>
                             </div>
                         </a>
                     </div>

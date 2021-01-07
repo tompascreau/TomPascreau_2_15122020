@@ -22,7 +22,7 @@ main
 
 header
 {
-    padding: 0 2em;
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
 }
@@ -104,6 +104,8 @@ h2
 
 #bouton_recherche
 {
+    width: 420px;
+    height: 50px;
     display: flex;
     width: min-content;
     border-radius: 1em;
@@ -111,27 +113,35 @@ h2
     margin: 10px 0;
 }
 
-#bouton_recherche i
+#bouton_recherche #logo_recherche
 {
-    padding: 15px;
+    width: 50px;
+    height: 100%;
     background-color: #F2F2F2;
-    font-size: 1em;
+    display: flex;
+}
+
+#bouton_recherche .search_logo
+{
+    margin: auto;
 }
 
 #bouton_recherche input
 {
     border: solid #F2F2F2 1px;
+    border-right: unset;
     padding: 0 1em;
     font-weight: bold;
 }
 
 #bouton_recherche button
 {
+    width: 135px;
+    height: 100%;
     background-color:  #0065fc;
     font-weight: bold;
     color: white;
     font-size: 1em;
-    padding: 15px;
     border: none;
 }
 
@@ -146,6 +156,7 @@ h2
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 10px;
 }
 
 #filtres h4
@@ -158,16 +169,22 @@ h2
 
 .selecteur
 {
-    background-color: white;
+    width: auto;
+    height: 50px;
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 1em;
-    border: 3px solid #F2F2F2;
+    border: 2px solid #d9d9d9;
     border-radius: 5em;
     align-items: center;
     justify-content: center;
     outline: 0;
+}
+
+.selecteur:visited
+{
+    text-decoration: none;
 }
 
 .selecteur:hover
@@ -175,21 +192,22 @@ h2
     opacity: 50%;
 }
 
-.selecteur:focus
-{
-    background-color: #0065fc;
-    border: none;
-}
-
 .selecteur h4
 {
+    position: relative;
+    left: -5px;
     padding: 1em;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bolder;
 }
 
 .logo_container
 {
-    height: 30px;
-    width: 30px;
+    position: relative;
+    left: -2px;
+    height: 22px;
+    width: 22px;
     display: flex;
     padding: 1em;
     background-color: #DEEBFF;
@@ -200,7 +218,13 @@ h2
 
 .logo_selecteur
 {
+    position: relative;
     color: #0065fc;
+}
+
+#informations
+{
+    margin-left: 10px;
 }
 
 /* Fin de sous partie filtres */
@@ -232,7 +256,7 @@ h2
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 1em;
+    border-radius: 20px;
 }
 
 #hebergements_in_city h3
@@ -255,9 +279,9 @@ h2
 
 .logement
 {
-    width: 30%;
-    height: 180px;
-    margin-bottom: 35px;
+    width: 245px;
+    height: 200px;
+    margin-bottom: 30px;
     background-color: white;
     border: white solid 5px;
     border-bottom: white solid 0px;
@@ -269,14 +293,14 @@ h2
 .image_hotels
 {
     width: 100%;
-    height: 105px;
+    height: 120px;
     overflow: hidden;
 }
 
 .image_hotels img
 {
     position: relative;
-    top: -25px;
+    top: -20px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -287,9 +311,14 @@ h2
     top: -50px;
 }
 
+.image_hotels #img_5
+{
+    top: -7px;
+}
+
 .image_hotels #img_6
 {
-    top: -115px;
+    top: -120px;
 }
 
 .content_hotels
@@ -318,6 +347,19 @@ h2
     margin: 0%;
 }
 
+#link_down_hotels h4
+{
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin: 0;
+}
+
+#link_down_hotels a
+{
+    color: black;
+    font-size: 1.1em;
+}
+
 .stars
 {
     display: flex;
@@ -343,17 +385,26 @@ h2
     margin: 20px;
     margin-right: unset;
     padding: 40px;
+    padding-bottom: unset;
     width: 30%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 1em;
+    border-radius: 20px;
 }
 
 #title_populaires
 {
     display: flex;
     justify-content: space-between;
+}
+
+#title_populaires h3
+{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 #logements_populaires
@@ -363,24 +414,32 @@ h2
     flex-direction: column;
 }
 
-.logement_2 a
+.logement_2
 {
-    display: flex;
-    flex-direction: row;
+    height: 135px;
+    width: auto;
     background-color: white;
     border: white solid 5px;
-    border-radius: 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
     overflow: hidden;
-    box-shadow: 0px 0px 15px grey;
-    margin-bottom: 35px;
+    box-shadow: 0px 0px 10px #d7d7d7;
+}
+
+.logement_2 a
+{
+    height: 135px;
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
     color: black;
 }
 
 .images_populaires
 {
-    width: 130px;
-    height: 140px;
+    position: relative;
+    object-fit: cover;
+    width: 125px;
     overflow: hidden;
 }
 
@@ -389,9 +448,9 @@ h2
     position: relative;
     object-fit: cover;   
     width: auto;
-    max-height: 110%;
-    top: -5px;
-    left: -50px;
+    max-height: 100%;
+/*    top: -5px;
+    left: -50px;*/
 }
 
 
@@ -405,6 +464,9 @@ h2
 
 .content_populaires h4
 {
+    width: 205px;
+    font-weight: bolder;
+    font-size: 1.1em;
     margin: 0;
 }
 
@@ -440,12 +502,21 @@ h2
 #activites_in_city h4
 {
     padding: 0 10px;
+    margin: unset;
+}
+
+.lieu_activite
+{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .style_1
 {
     width: 22%;
-    box-shadow: 0px 0px 15px grey;
+    box-shadow: 0px 0px 10px #d7d7d7;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -472,14 +543,14 @@ h2
     object-fit: cover;
 }
 
-.style_2 > a:nth-child(1)
+/*.style_2 > a:nth-child(1)
 {
     margin-bottom: 40px;
-}
+}*/
 
 .activité_2
 {
-    box-shadow: 0px 0px 15px grey;
+    box-shadow: 0px 0px 10px #d7d7d7;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -487,6 +558,9 @@ h2
 .image_style_1
 {
     overflow: hidden;
+    object-fit: cover;
+    height: 390px;
+    width: 100%;
 }
 
 .image_style_1 img
@@ -496,9 +570,36 @@ h2
     width: 200%;
 }
 
-.image_style_2
+#image_style_2_top_left
 {
     overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+}
+
+#image_style_2_bottom_left
+{
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 110px;
+}
+
+#image_style_2_top_right
+{
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 140px;
+}
+
+#image_style_2_bottom_right
+{
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
 }
 
 .image_style_2 img
