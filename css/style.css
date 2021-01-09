@@ -3,7 +3,7 @@
 
 body
 {
-    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
     margin: 0%;
     font-family: 'Raleway', sans-serif;
 }
