@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
 body
@@ -15,15 +15,15 @@ a
 
 main
 {
-    padding: 0 50px;
+    padding: 0;
 }
 
 
 /* Header */
 
-/*header
+header
 {
-    padding: 0 50px;
+    padding: 0 5%;
     display: flex;
     flex-direction: row;
 }
@@ -31,19 +31,22 @@ main
 #logo
 {
     display: flex;
-    flex: 2;
-    margin: 2em 0;
+    margin: 30px 0;
+    z-index: 2;
 }
 
 #menu_nav
 {
+    z-index: 1;
+    height: auto;
+    width: auto;
     display: flex;
-    flex: 1;
 }
 
 nav
 {
-    width: 100%;
+    width: inherit;
+    height: inherit;
 }
 
 #list_nav
@@ -57,6 +60,7 @@ nav
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 header li
@@ -84,6 +88,9 @@ header a:hover
 
 #inscription
 {
+    position: absolute;
+    height: initial;
+    width: inherit;
     color:  #0065FC;
 }
 
@@ -91,7 +98,7 @@ header a:hover
 
 /* section recherche */
 
-/*h3
+h3
 {
     font-weight: bolder;
     margin: 0;
@@ -103,15 +110,26 @@ header a:hover
     flex-direction: column;
 }
 
+#en_tete
+{
+    margin: 0 5%;
+}
+
+#recherche_zone
+{
+    margin: 0 5%;
+}
+
 #bouton_recherche
 {
-    width: 420px;
+    width: 100%;
     height: 50px;
     display: flex;
-    width: min-content;
+    /*width: min-content;*/
     border-radius: 15px;
-    overflow: hidden;
+    overflow: visible;
     margin: 10px 0;
+    border: solid #F2F2F2 1px;
 }
 
 #bouton_recherche #logo_recherche
@@ -133,17 +151,20 @@ header a:hover
 
 #bouton_recherche input
 {
+    width: 100%;
     font-size: 1.1em;
-    border: solid #F2F2F2 1px;
-    border-right: unset;
-    padding: 0 1em;
+    padding: 0 15px;
     font-weight: bold;
+    border: none;
 }
 
 #bouton_recherche button
 {
-    width: 135px;
-    height: 100%;
+    top: -1px;
+    position: relative;
+    height: 52px;
+    width: 52px;
+    border-radius: 15px;
     background-color:  #0065fc;
     font-weight: bold;
     color: white;
@@ -153,37 +174,47 @@ header a:hover
 
 #bouton_recherche span:nth-child(2)
 {
+    display: inline;
+}
+
+#bouton_recherche span:nth-child(1)
+{
     display: none;
 }
 
 /* Sous partie filtres */
-/*#filtres
+#filtres
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin: 0 5%;
 }
 
 #filtres h4
-{
-    margin: 0%;
+{ 
+    position: relative;
+    margin: 0;
+    width: 100%;
     display: flex;
 }
 
 .selecteur
 {
-    width: auto;
+    box-sizing: border-box;
+    position: relative;
+    width: min-content;
     height: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 0;
-    margin: 1em;
+    margin: 20px;
+    margin-left: 0;
     border: 2px solid #d9d9d9;
     border-radius: 5em;
     align-items: center;
     justify-content: center;
-    outline: 0;
 }
 
 .selecteur:visited
@@ -198,8 +229,10 @@ header a:hover
 
 .selecteur h4
 {
+    box-sizing: border-box;
+    width: min-content;
     position: relative;
-    padding: 1em;
+    margin: 0;
     color: black;
     font-size: 1.1em;
     font-weight: bolder;
@@ -207,12 +240,13 @@ header a:hover
 
 .logo_container
 {
+    box-sizing: border-box;
     position: relative;
     left: -2px;
-    height: 22px;
-    width: 22px;
+    height: 50px;
+    width: 50px;
     display: flex;
-    padding: 1em;
+    padding: 0;
     background-color: #DEEBFF;
     border-radius: 30px;
     align-items: center;
@@ -227,7 +261,7 @@ header a:hover
 
 #informations
 {
-    margin-left: 10px;
+    margin: 0 5%;
 }
 
 #text_infos
@@ -267,10 +301,12 @@ header a:hover
 
 /* section Hébergements */
 
-/*#hebergements
+#hebergements
 {
     display: flex;
+    flex-direction: column-reverse;
 }
+
 
 #hébergements h4
 {
@@ -281,16 +317,13 @@ header a:hover
 
 /* Partie "Hébergements à Marseille" */
 
-/*#hebergements_in_city
+#hebergements_in_city
 {
-    margin: 20px;
-    margin-left: unset;
-    padding: 40px;
+    margin: 0;
+    padding: 40px 5%;
     width: 70%;
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
-    border-radius: 20px;
 }
 
 #hebergements_in_city h3
@@ -419,17 +452,17 @@ header a:hover
 
 /* Partie "Les plus populaires" */
 
-/*#populaires
+#populaires
 {
-    margin: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
     margin-right: unset;
-    padding: 40px;
+    padding: 40px 5%;
     padding-bottom: unset;
-    width: 30%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 20px;
 }
 
 #title_populaires
@@ -455,6 +488,7 @@ header a:hover
 
 .logement_2
 {
+    box-sizing: border-box;
     width: 100%;
     height: auto;
     border: white solid 5px;
@@ -462,10 +496,12 @@ header a:hover
     margin-bottom: 30px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #d7d7d7;
+    background-color: white;
 }
 
 .logement_2 a
 {
+    box-sizing: border-box;
     position: relative;
     height: 135px;
     display: flex;
@@ -502,7 +538,7 @@ header a:hover
 .content_populaires
 {
     background-color: white;
-    width: 205px;
+    width: 100%;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -530,7 +566,7 @@ header a:hover
 
 /* Partie "Activités à Marseille*/
 
-/*#activites
+#activites
 {
     padding-bottom: 4em;
 }
@@ -681,7 +717,7 @@ header a:hover
 
 /* Partie Footer */
 
-/*footer li
+footer li
 {
     list-style: none;
 }
@@ -720,34 +756,4 @@ footer a
 {
     margin: 1em;
     flex: 1;
-}
-
-/* style mobile */
-
-/*@media screen and (max-width: 768px)
-{
-    header #list_nav
-    {
-        flex-wrap: wrap;
-    }
-
-    .selecteur
-    {
-        margin: 10px 0;
-    }
-
-    #hebergements
-    {
-        flex-direction: column-reverse;
-    }
-
-    #hebergements_in_city
-    {
-        width: 100%;
-    }
-
-    #populaires
-    {
-        width: 100%;
-    }
 }

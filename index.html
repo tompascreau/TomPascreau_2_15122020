@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/resolution_mobile.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>Reservia</title>
@@ -17,8 +18,8 @@
                     <ul id="list_nav">
                         <li><a href="#hébergements" class="classique">Hébergements</a></li>
                         <li><a href="#activités" class="classique">Activités</a></li>
-                        <li><a href="#" id="inscription"><strong>s'inscrire</strong></a></li>
                     </ul>
+                    <a href="#" id="inscription"><strong>s'inscrire</strong></a>
                 </nav>
             </div>
         </header>
@@ -28,13 +29,13 @@
                     <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div>
+                <div id="recherche_zone">
                     <div id="bouton_recherche">
                         <div id="logo_recherche">
                             <i class="fas fa-map-marker-alt search_logo"></i>
                         </div>
                         <input type="search" placeholder="Où allez vous ?">
-                        <button>
+                        <button type="button">
                             <span>Rechercher</span>
                             <span><i class="fas fa-search"></i></span>
                         </button>
@@ -68,7 +69,12 @@
                     </a>
                 </div>
                 <div id="informations">
-                    <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div id="text_infos">
+                        <div id="info_circle">
+                            <i class="fas fa-info info"></i>
+                        </div>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
                 </div>
             </section>
             <section id="hebergements">
