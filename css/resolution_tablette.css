@@ -768,6 +768,7 @@ footer li
 {
     list-style: none;
     margin-bottom: 15px;
+    white-space: nowrap;
 }
 
 footer ul
