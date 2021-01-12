@@ -768,7 +768,6 @@ footer li
 {
     list-style: none;
     margin-bottom: 15px;
-    white-space: nowrap;
 }
 
 footer ul
@@ -806,13 +805,13 @@ footer a
 #hébergements_footer
 {
     margin: 0px;
-    margin-top: 35px;
+    margin-top: 0px;
     flex: 1;
 }
 
 #assistance_footer
 {
     margin: 0px;
-    margin-top: 35px;
+    margin-top: 0px;
     flex: 1;
 }
