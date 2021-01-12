@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
 body
@@ -21,7 +21,7 @@ main
 
 /* Header */
 
-/*header
+header
 {
     padding: 0 50px;
     display: flex;
@@ -91,7 +91,7 @@ header a:hover
 
 /* section recherche */
 
-/*h3
+h3
 {
     font-weight: bolder;
     margin: 0;
@@ -157,7 +157,7 @@ header a:hover
 }
 
 /* Sous partie filtres */
-/*#filtres
+#filtres
 {
     display: flex;
     flex-direction: row;
@@ -267,7 +267,7 @@ header a:hover
 
 /* section Hébergements */
 
-/*#hebergements
+#hebergements
 {
     display: flex;
 }
@@ -281,7 +281,7 @@ header a:hover
 
 /* Partie "Hébergements à Marseille" */
 
-/*#hebergements_in_city
+#hebergements_in_city
 {
     margin: 20px;
     margin-left: unset;
@@ -419,7 +419,7 @@ header a:hover
 
 /* Partie "Les plus populaires" */
 
-/*#populaires
+#populaires
 {
     margin: 20px;
     margin-right: unset;
@@ -530,7 +530,7 @@ header a:hover
 
 /* Partie "Activités à Marseille*/
 
-/*#activites
+#activites
 {
     padding-bottom: 4em;
 }
@@ -681,7 +681,7 @@ header a:hover
 
 /* Partie Footer */
 
-/*footer li
+footer li
 {
     list-style: none;
 }
@@ -720,34 +720,4 @@ footer a
 {
     margin: 1em;
     flex: 1;
-}
-
-/* style mobile */
-
-/*@media screen and (max-width: 768px)
-{
-    header #list_nav
-    {
-        flex-wrap: wrap;
-    }
-
-    .selecteur
-    {
-        margin: 10px 0;
-    }
-
-    #hebergements
-    {
-        flex-direction: column-reverse;
-    }
-
-    #hebergements_in_city
-    {
-        width: 100%;
-    }
-
-    #populaires
-    {
-        width: 100%;
-    }
 }
