@@ -103,6 +103,11 @@ header li
     border-top: unset;
 }
 
+#list_nav li:nth-child(3)
+{
+    display: none;
+}
+
 #inscription
 {
     position: absolute;
@@ -111,6 +116,11 @@ header li
     height: 30px;
     padding: 0;
     color:  #0065FC;
+}
+
+#inscription_2
+{
+    display: inline;
 }
 
 /* fin du Header */
