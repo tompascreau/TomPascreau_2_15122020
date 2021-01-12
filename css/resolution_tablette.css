@@ -15,7 +15,8 @@ a
 
 main
 {
-    padding: 0 5%;
+    margin-top: 35px;
+    padding: 0;
 }
 
 
@@ -23,73 +24,103 @@ main
 
 header
 {
-    padding: 0 5%;
+    height: 130px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 #logo
 {
+    position: absolute;
+    height: 90px;
+    width: auto;
+    left: 5%;
+    top: -5px;
+    box-sizing: border-box;
     display: flex;
-    flex: 2;
-    margin: 2em 0;
+}
+
+#logo img
+{
+    position: absolute;
+    height: 50px;
 }
 
 #menu_nav
 {
-    display: flex;
-    flex: 1;
+    box-sizing: border-box;
+    position: absolute;
+    height: 130px;
+    width: 100%;
 }
 
 nav
 {
-    width: 100%;
+    width: inherit;
+    height: inherit;
 }
 
 #list_nav
 {
+    box-sizing: border-box;
+    position: relative;
     display: flex;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    height: 130px;
     list-style: none;
 }
 
 header li
 {
-    display: flex;
+    box-sizing: border-box;
+    width: 50%;
     height: 100%;
-    justify-content: center;
     font-size: 1em;
 }
-
-header a
+#list_nav a
 {
     color: black;
     display: flex;
-    padding: 0 40px;
-    height: 100%;
-    align-items: center;
+    height: 20px;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 85px;
+    border-bottom: solid 3px #F2F2F2;
 }
 
-header a:hover
+#list_nav a:hover
 {
     color: #0065FC;
-    border-top: #0065FC 3px solid;
+    border-bottom: #0065FC 3px solid;
+    border-top: unset;
+}
+
+#list_nav li:nth-child(3)
+{
+    display: none;
 }
 
 #inscription
 {
+    position: absolute;
+    right: 5%;
+    top: 40px;
+    height: 30px;
+    padding: 0;
     color:  #0065FC;
 }
 
 #inscription_2
 {
-    display: none;
+    display: inline;
 }
 
 /* fin du Header */
@@ -106,6 +137,17 @@ h3
 {
     display: flex;
     flex-direction: column;
+}
+
+#en_tete
+{
+    margin: 0 5%;
+}
+
+#recherche_zone
+{
+    margin: 0 5%;
+    margin-bottom: 35px;
 }
 
 #bouton_recherche
@@ -162,45 +204,47 @@ h3
 }
 
 /* Sous partie filtres */
-
 #filtres
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin: 0 5%;
 }
 
 #filtres h4
-{
-    margin: 0%;
+{ 
+    position: relative;
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
     display: flex;
-    align-items: center;
 }
 
 #filtres h4:nth-child(1)
 {
     margin-bottom: 20px;
-    margin-right: 30px;
+    font-size: 1.2em;
 }
 
 .selecteur
 {
-    width: auto;
+    box-sizing: border-box;
+    position: relative;
+    width: min-content;
     height: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 0;
     margin-right: 20px;
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 2px solid #d9d9d9;
     border-radius: 5em;
     align-items: center;
     justify-content: center;
-    outline: 0;
 }
 
 .selecteur:visited
@@ -215,8 +259,13 @@ h3
 
 .selecteur h4
 {
+    box-sizing: border-box;
+    width: min-content;
     position: relative;
-    padding: 1em;
+    left: -5px;
+    margin: 0;
+    flex: 1;
+    white-space: nowrap;
     color: black;
     font-size: 1.1em;
     font-weight: bolder;
@@ -224,12 +273,13 @@ h3
 
 .logo_container
 {
+    box-sizing: border-box;
     position: relative;
     left: -2px;
-    height: 22px;
-    width: 22px;
+    height: 50px;
+    width: 50px;
     display: flex;
-    padding: 1em;
+    padding: 0;
     background-color: #DEEBFF;
     border-radius: 30px;
     align-items: center;
@@ -244,13 +294,15 @@ h3
 
 #informations
 {
-    margin-left: 10px;
+    margin: 0 5%;
 }
 
 #text_infos
 {
     display: flex;
     font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 #text_infos p
@@ -287,7 +339,9 @@ h3
 #hebergements
 {
     display: flex;
+    flex-direction: column-reverse;
 }
+
 
 #hébergements h4
 {
@@ -300,21 +354,20 @@ h3
 
 #hebergements_in_city
 {
-    margin: 20px;
-    margin-left: unset;
-    padding: 40px;
-    width: 70%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 40px 5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
-    border-radius: 20px;
+    background-color: white;
 }
 
 #hebergements_in_city h3
 {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 1.4em;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -331,14 +384,13 @@ h3
 .logement
 {
     box-sizing: border-box;
-    width: 29.5%;
+    width: 100%;
     height: auto;
     margin-bottom: 30px;
     border: white solid 5px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #d7d7d7;
-    background-color: white;
 }
 
 .image_hotels
@@ -351,12 +403,13 @@ h3
 .image_hotels img
 {
     position: relative;
+    top: -10%;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-/*.image_hotels #img_4
+.image_hotels #img_4
 {
     top: -35%;
 }
@@ -371,7 +424,7 @@ h3
 .image_hotels #img_6
 {
     top: -120px;
-}*/
+}
 
 .content_hotels
 {
@@ -379,7 +432,7 @@ h3
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;
+    height: 55px;
     padding: 10px;
     font-size: 0.9em;
 }
@@ -404,16 +457,15 @@ h3
 
 #link_down_hotels h4
 {
-    font-size: 1.1em;
     font-weight: bolder;
     margin: 0;
     margin-top: 5px;
+    font-size: 15px;
 }
 
 #link_down_hotels a
 {
     color: black;
-    font-size: 1.1em;
 }
 
 .stars
@@ -439,31 +491,33 @@ h3
 
 #populaires
 {
-    margin: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
     margin-right: unset;
-    padding: 40px;
+    padding: 40px 5%;
     padding-bottom: unset;
-    width: 30%;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 0;
 }
 
 #title_populaires
 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    justify-content: space-between;
+    margin-bottom: 25px;
     margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 #title_populaires h3
 {
     font-size: 20px;
-    font-weight: bolder;
+    margin: 0;
 }
 
 #logements_populaires
@@ -475,6 +529,7 @@ h3
 
 .logement_2
 {
+    box-sizing: border-box;
     width: 100%;
     height: auto;
     border: white solid 5px;
@@ -487,12 +542,12 @@ h3
 
 .logement_2 a
 {
+    box-sizing: border-box;
     position: relative;
     height: 135px;
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    
     color: black;
 }
 
@@ -508,8 +563,8 @@ h3
 {
     position: relative;
     object-fit: cover;   
-    width: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -524,7 +579,7 @@ h3
 .content_populaires
 {
     background-color: white;
-    width: 205px;
+    flex: 1;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -554,12 +609,14 @@ h3
 
 #activites
 {
+    box-sizing: border-box;
+    margin: 0 5%;
     padding-bottom: 4em;
 }
 
 #activites h3
 {
-    margin-top: 45px;
+    margin-top: 15px;
     margin-bottom: 30px;
     font-size: 20px;
 }
@@ -568,6 +625,7 @@ h3
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -590,6 +648,10 @@ h3
 
 .lieu_activite
 {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
     height: 55px;
     width: 100%;
     display: flex;
@@ -598,9 +660,21 @@ h3
 
 .style_1
 {
-    width: 22%;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 205px;
     box-shadow: 0px 0px 10px #d7d7d7;
     border-radius: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image_style_1
+{
+    object-fit: cover;
+    flex: 1;
     overflow: hidden;
 }
 
@@ -619,34 +693,41 @@ h3
 
 .style_2
 {
+    height: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    width: 22%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .style_2 img
 {
     width: 100%;
-    height: auto;
+    height: 150px;
     position: relative;
     object-fit: cover;
 }
 
+.style_2 a
+{
+    height: 205px;
+    margin-bottom: 25px;
+}
+
 .activité_2
 {
+    position: relative;
     box-shadow: 0px 0px 10px #d7d7d7;
     border-radius: 15px;
     overflow: hidden;
-}
-
-.image_style_1
-{
-    overflow: hidden;
-    object-fit: cover;
-    height: 390px;
     width: 100%;
+    margin-bottom: 25px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
 }
 
 .image_style_1 img
@@ -656,55 +737,38 @@ h3
     width: 200%;
 }
 
-#image_style_2_top_left
-{
-    overflow: hidden;
-    object-fit: cover;
-    width: 100%;
-    height: 180px;
-}
-
-#image_style_2_top_left img
+.image_style_2
 {
     position: relative;
-    top: -110px;
+    object-fit: cover;
+    height: 150px;
+    overflow: hidden;
+}
+
+#image_style_2_top_left
+{
+    height: unset;
+    top: 0px;
 }
 
 #image_style_2_bottom_left
 {
-    overflow: hidden;
-    object-fit: cover;
-    width: 100%;
-    height: 110px;
-}
-
-#image_style_2_bottom_left img
-{
-    position: relative;
-    top: -20px;
+    height: unset;
+    top: 0px;
 }
 
 #image_style_2_top_right
 {
-    overflow: hidden;
-    object-fit: cover;
-    width: 100%;
-    height: 140px;
+    height: unset;
+    top: 0px;
 }
 
 #image_style_2_bottom_right
 {
-    overflow: hidden;
-    object-fit: cover;
-    width: 100%;
-    height: 150px;
+    height: unset;
+    top: 0px;
 }
 
-#image_style_2_bottom_right img
-{
-    position: relative;
-    top: -13px;
-}
 
 /* Fin de partie "Activités à Marseille" */
 
@@ -712,7 +776,7 @@ h3
 
 footer h4
 {
-    margin-bottom: 25px;
+    margin: 0px;
 }
 
 footer li
@@ -723,6 +787,8 @@ footer li
 
 footer ul
 {
+    margin-top: 20px;
+    margin-bottom: 0px;
     padding: 0%;
 }
 
@@ -732,6 +798,8 @@ footer
     padding-bottom: 35px;
     background-color: #F2F2F2;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
@@ -742,18 +810,21 @@ footer a
 
 #a_propos_footer
 {
-    margin: 0;
+    margin: 0px;
+    margin-top: 0px;
     flex: 1;
 }
 
 #hébergements_footer
 {
-    margin: 0;
+    margin: 0px;
+    margin-top: 35px;
     flex: 1;
 }
 
 #assistance_footer
 {
-    margin: 0;
+    margin: 0px;
+    margin-top: 35px;
     flex: 1;
 }
