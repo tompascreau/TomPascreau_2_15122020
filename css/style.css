@@ -356,23 +356,6 @@ h3
     object-fit: cover;
 }
 
-/*.image_hotels #img_4
-{
-    top: -35%;
-}
-
-.image_hotels #img_5
-{
-    width: 110%;
-    height: auto;
-    top: -10%;
-}
-
-.image_hotels #img_6
-{
-    top: -120px;
-}*/
-
 .content_hotels
 {
     background-color: white;
@@ -413,7 +396,7 @@ h3
 #link_down_hotels a
 {
     color: black;
-    font-size: 1.1em;
+    font-size: 15px;
 }
 
 .stars
