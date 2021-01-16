@@ -3,7 +3,6 @@
 
 body
 {
-    text-rendering: geometricPrecision;
     margin: 0%;
     font-family: 'Raleway', sans-serif;
 }
@@ -108,7 +107,7 @@ header li
     display: none;
 }
 
-#inscription
+.inscription
 {
     position: absolute;
     right: 5%;
