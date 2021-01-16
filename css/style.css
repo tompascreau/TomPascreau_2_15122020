@@ -343,7 +343,7 @@ h3
 
 .image_hotels
 {
-    width: 100%;
+    width: auto;
     height: 120px;
     overflow: hidden;
 }
@@ -353,7 +353,17 @@ h3
     position: relative;
     width: 100%;
     height: auto;
-    object-fit: cover;
+}
+
+#img_4
+{
+    top: -40px;
+}
+
+#img_6
+{
+    position: relative;
+    top: -100px;
 }
 
 .content_hotels

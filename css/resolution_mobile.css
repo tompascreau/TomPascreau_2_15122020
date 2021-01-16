@@ -181,6 +181,7 @@ h3
 #bouton_recherche input
 {
     box-sizing: inherit;
+    min-width: 100px;
     flex: 1;
     width: auto;
     font-size: 1.1em;
@@ -419,23 +420,24 @@ h3
     width: 100%;
     height: auto;
     object-fit: cover;
+    top: -100px;
 }
 
-.image_hotels #img_4
+#img_4
 {
-    top: -35%;
+    top: -140px;
 }
 
-.image_hotels #img_5
+#img_5
 {
     width: 110%;
     height: auto;
     top: -10%;
 }
 
-.image_hotels #img_6
+#img_6
 {
-    top: -120px;
+    top: -250px;
 }
 
 .content_hotels
@@ -701,6 +703,7 @@ h3
 .style_1 img:nth-child(1)
 {
     left: -155px;
+    top: -150px;
 }
 
 .style_2
@@ -712,7 +715,6 @@ h3
     justify-content: space-between;
     width: 100%;
     height: auto;
-    overflow: hidden;
 }
 
 .style_2 img
@@ -759,20 +761,33 @@ h3
 
 #image_style_2_top_left
 {
-    height: unset;
+    height: 150px;
+}
+
+#image_style_2_top_left img
+{
     top: 0px;
 }
 
 #image_style_2_bottom_left
 {
-    height: unset;
+    height: 150px;
+}
+
+#image_style_2_bottom_left img
+{
     top: 0px;
 }
 
 #image_style_2_top_right
 {
-    height: unset;
-    top: 0px;
+    height: 150px;
+}
+
+#image_style_2_top_right img
+{
+    width: 100%;
+    height: auto;
 }
 
 #image_style_2_bottom_right
@@ -781,6 +796,10 @@ h3
     top: 0px;
 }
 
+#image_style_2_bottom_right img
+{
+    top: unset;
+}
 
 /* Fin de partie "Activités à Marseille" */
 

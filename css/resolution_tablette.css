@@ -118,9 +118,15 @@ header li
     color:  #0065FC;
 }
 
+header a :nth-child(4) :hover
+{
+    color: #0065FC;
+    border-top: unset;
+}
+
 #inscription_2
 {
-    display: inline;
+    display: block;
 }
 
 /* fin du Header */
@@ -348,8 +354,6 @@ h3
     margin: 0%;
 }
 
-/* Fin de section Hébergements */
-
 /* Partie "Hébergements à Marseille" */
 
 #hebergements_in_city
@@ -369,7 +373,7 @@ h3
 {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 1.4em;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -409,6 +413,22 @@ h3
     width: 100%;
     height: auto;
     object-fit: cover;
+    top: -20px;
+}
+
+#img_4
+{
+    top: -80px;
+}
+
+#img_5
+{
+    top: unset;
+}
+
+#img_6
+{
+    top: -140px;
 }
 
 .content_hotels
@@ -590,6 +610,8 @@ h3
 }
 /* Fin de partie "Les plus populaires" */
 
+/* Fin de section Hébergements */
+
 /* Partie "Activités à Marseille*/
 
 #activites
@@ -651,16 +673,21 @@ h3
     height: 460px;
     box-shadow: 0px 0px 10px #d7d7d7;
     border-radius: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
+}
+
+.style_1 a
+{
+    height: 460px;
 }
 
 .image_style_1
 {
     object-fit: cover;
-    flex: 1;
     overflow: hidden;
+    height: 405px;
 }
 
 .style_1 img
@@ -684,8 +711,7 @@ h3
     flex-direction: column;
     justify-content: space-between;
     width: 47.5%;
-    height: auto;
-    overflow: hidden;
+    height: 460px;
 }
 
 .style_2 img
@@ -699,7 +725,6 @@ h3
 .style_2 a
 {
     height: 205px;
-    margin-bottom: 25px;
 }
 
 .activité_2
@@ -709,7 +734,6 @@ h3
     border-radius: 15px;
     overflow: hidden;
     width: 100%;
-    margin-bottom: 25px;
     height: 205px;
     display: flex;
     flex-direction: column;
@@ -724,36 +748,46 @@ h3
 
 .image_style_2
 {
-    position: relative;
-    object-fit: cover;
     height: 150px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #image_style_2_top_left
 {
-    height: unset;
+    height: 150px;
+}
+
+#image_style_2_top_left img
+{
+    position: relative;
     top: 0px;
 }
 
 #image_style_2_bottom_left
 {
-    height: unset;
-    top: 0px;
+    height: 150px;
+}
+
+#image_style_2_bottom_left img
+{
+    top: auto;
 }
 
 #image_style_2_top_right
 {
-    height: unset;
-    top: 0px;
+    height: 150px;
 }
 
-#image_style_2_bottom_right
+#image_style_2_top_right img
 {
-    height: unset;
-    top: 0px;
+    width: 100%;
+    height: auto;
 }
 
+#image_style_2_bottom_right img
+{
+    top: unset;
+}
 
 /* Fin de partie "Activités à Marseille" */
 
